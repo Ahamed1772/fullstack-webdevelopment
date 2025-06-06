@@ -1,0 +1,23 @@
+h2{
+    color: antiquewhite;
+}
+
+.valid{
+    color: green;
+}
+
+#new{
+    color: yellow;
+}
+
+h3[draggable]{
+    color: blueviolet;
+}
+
+h3[draggable="false"]{
+    color: black;
+}
+
+*{
+    font-size: 30px;
+}

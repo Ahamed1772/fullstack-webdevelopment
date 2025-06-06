@@ -1,0 +1,55 @@
+*{
+    background-color: aliceblue;
+}
+
+.heading{
+    font-size: 30px;
+}
+
+h2{
+    color: aqua;
+}
+
+.square{
+    height: 50px;
+    width: 50px;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#txtorange{
+    color: orange;
+}
+
+#txtblue{
+    color: blue;
+}
+
+#txtgreen{
+    color: green;
+}
+
+#txtyellow{
+    color: yellow;
+}
+#txtred{
+    color: red;
+}

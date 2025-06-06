@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+}
+
+.firstClass{
+    color: black;
+}
+
+#firstId{
+    color: green;
+}
+
+li[value="4"]{
+    color: blue;
+}
+
+li{
+    color: red;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
