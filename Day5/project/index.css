@@ -1,0 +1,25 @@
+
+.poster{
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    border: 3px solid yellow;
+    text-align: center;
+}
+
+*{
+    background-color: black;
+}
+
+h1{
+    color: yellow;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+
+p{
+    color: white;
+}
