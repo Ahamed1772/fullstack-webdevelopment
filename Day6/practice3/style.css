@@ -1,0 +1,29 @@
+*{
+    background-color: gainsboro;
+}
+
+h1{
+    font-size: 24p;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#red{
+    background-color: red;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#green{
+    background-color: green;
+}
+
+
+#red,#green,#blue{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+

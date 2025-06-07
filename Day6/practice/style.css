@@ -1,0 +1,38 @@
+
+/* group selector */
+h1,h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: blueviolet;
+}
+
+/* direct child only */
+.box > .done {
+    color: firebrick;
+}
+
+/* select all descendent */
+.list li {
+    color: blue;
+}
+/* chaining selector */
+li.done{
+    color: seagreen;
+}
+/* combining combiners */
+ul >  p.done{
+    font-size: 0.5rem;
+    color: yellow;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+
+
+ul p {
+    text-decoration: none;
+}
+
+

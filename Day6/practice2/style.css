@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(199, 143, 91);
+}
+
+#circle{
+    background-color: green;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+#rectangle{
+    background-color: red;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+

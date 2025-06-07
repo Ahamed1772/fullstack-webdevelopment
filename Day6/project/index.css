@@ -1,0 +1,20 @@
+
+h2{
+    color: yellow;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+@media (min-width: 1024px) {
+    #first,#second{
+        display: inline-block;
+        width: 600px;
+        height: 500px;
+    }
+    img{
+        float: left;
+    }
+    p{
+        padding-left: 10px;
+    }
+}

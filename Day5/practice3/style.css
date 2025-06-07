@@ -1,0 +1,25 @@
+
+div{
+    background-color: red;
+    width: 500px;
+    height: 330px;
+}
+
+#first,#second{
+    display: inline-block;
+    margin-top: 0;
+}
+
+#second{
+    position: relative;
+    left: 300px;
+}
+
+img {
+    float: left;
+}
+
+footer{
+    background-color: purple;
+    text-align: center;
+}
