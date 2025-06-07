@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexdirection</title>
+    <style>
+        #red{
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #indigo{
+            background-color: indigo;
+        }
+        #purple{
+            background-color: purple;
+        }
+        #container{
+            display: inline-flex;
+            flex-direction: column;
+        }
+        #container div{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="red">red</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="green">green</div>
+        <div id="blue">blue</div>
+        <div id="indigo">indigo</div>
+        <div id="purple">purple</div>  
+    </div>
+</body>
+</html>

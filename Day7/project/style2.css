@@ -1,0 +1,25 @@
+*{
+    background-color: bisque;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.plan{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20%;
+}
+
+@media (max-width: 1250px) {
+    #container{
+        flex-direction: column;
+        height: 100%;
+    }
+}
