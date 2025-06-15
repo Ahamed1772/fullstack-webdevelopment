@@ -1,0 +1,13 @@
+ <%if(data.seconds % 2 === 0){%>
+        <h1><%= data.seconds %></h1>
+    <%}else{%>
+        <h1>Nothing to display</h1>
+    <%}%>
+    <h1><%= data.title %></h1>
+    <ul>
+        <% for (let x = 0; x < data.items.length; x++){ %>
+        <li><%= data.items[x] %></li>
+        <% } %>
+    </ul>
+    <%- data.content %>
+    <%- include("footer.ejs") %>
