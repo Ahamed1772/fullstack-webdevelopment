@@ -1,0 +1,42 @@
+/* a:visited{
+    color: green;
+}
+a:active{
+    color: yellow;
+}
+
+a:hover{
+    color: rgb(255, 0, 242);
+    font-size: 20px;
+}
+
+a:link{
+    color: red;
+} */
+
+/* body{
+    background-image: url('https://www.w3schools.com/w3images/mac.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+/* 
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: rebeccapurple;
+    border-style: dotted;
+} */
+/* 
+p{
+    border-top-style: dotted;
+} */
+
+/* div{
+    display: none;
+} */
+
+.blue{
+    background-color: blue;
+    width: 100px;
+}
