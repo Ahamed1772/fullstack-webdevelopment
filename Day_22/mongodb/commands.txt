@@ -1,0 +1,97 @@
+show dbs --> it will shows database in the computer
+use shop --> it will create and switch to that database if it doesn't exit;if it already exist it will simply switch to it
+db.product.insertOne({name:"harry potter",price:30.00}) --> to create collection(product) inside a database shop with values 
+db.product.findOne() --> to return first value
+ctrl+enter -->to go to next line
+db.product.find() --> to return all value
+
+//CRUD
+1.--->to create
+db.employee.insertOne({name:"sandman",details:{position:"ai developer",salary:100000}})
+db.employee.insertMany([{ name:"batman",details:{position:"php developer",salary:70000}},{name:"hulk",details:{position:"web developer",salary:80000}},{name:"homelander",details:{position:"backend developer",salary:90000}}])
+2.--->to read
+db.employee.readOne()
+db.employee.read()
+db.employee.findOne({name:"ironman"})
+db.employee.findOne({"details.position":"php developer"})
+//3-->to update
+db.employee.updateOne({name:"batman"},{$set:{"details.position":"frontend developer" }})
+db.employee.updateMany({"details.position":"frontend developer"},{$set: {"details.salary":53000}})
+//4 -->to delete
+db.employee.deleteOne({name:"homelander"})
+db.employee.deleteMany({"details.position":"frontend developer"})
+----------------------------------------------------------------------------------------------------------------------------------------------------------->
+-->to create collection another way is this:
+db.createCollection('users',{ })
+-->
+db.employee.find({"details.salary":{$gt: 61000}})
+db.employee.find({"details.salary":{$lt: 61000}})
+-->to return all value even if its 1000
+db.employee.find().toArray()
+-->
+db.employee.find().forEach((data) => print(data))
+-->projection gives only specific value of whole data
+db.employee.find({},{name:1})
+db.employee.find({},{name:1,_id:0})
+db.employee.find({},{name:1,_id:0,is_employee:"true"})
+-->limiting data
+db.employee.find().limit(1)
+--> to skip first one in the row
+db.employee.find().skip(1)
+-->sort in ascending order
+db.employee.find().sort({name:1})
+--> sort out in descending order
+db.employee.find().sort({name:-1})
+-->query operator
+-->equal to 
+db.employee.find({"details.salary": {$eq:60000}}) 
+-->not equal to 
+db.employee.find({"details.salary": {$ne:60000}})
+-->greater than
+db.employee.find({"details.salary": {$gt:45000}})
+-->greater than and equal to 
+db.employee.find({"details.salary": {$gte:45000}})
+-->less than
+db.employee.find({"details.salary": {$lt:45000}})
+-->less than and equal to 
+db.employee.find({"details.salary": {$lte:45000}})
+--> include
+db.employee.find({"details.salary":{$in: [60000,80000]}})
+-->and operator
+db.employee.find({$and: [{name:{$eq: "spiderman"}},{"details.position":{$eq:"java developer"}}]})
+-->or operator
+db.employee.find({$or:[{name: {$eq: "spiderman"}},{"details.position":{$eq: "spiderman"}}]})
+opposite of $and and $or operator is $not and $nor
+--> to inject javascript inside mongodb
+db.employee.find({$where:function(){ return this.name=="spiderman"}})
+--> to show database name
+db.getName()
+--> to show collections
+show collections
+--> to get help
+db.movies.insertMany.help()
+-->to get value in data(to get only name in that item)
+db.movies.find({name:"John Wick"},{name:1})
+-->to get except that data in item
+db.movies.find({name:"John Wick"},{name:0})
+--> to get all name in the collection
+db.movies.find({},{name:1})
+-->count
+db.movies.find().count()
+--> to sort datas 
+db.movies.find({},{name:1}).sort({name:1})  --> ascending
+db.movies.find({},{name:1}).sort({name:-1}) -->descending
+-->greater than and less than
+db.movies.find({rating: {$gt: 9}})
+db.movies.find({rating: {$lt: 9}})
+-->to update data
+db.movies.updateOne({name:"Batman 2"},{$set: {rating:10.00}})
+db.movies.updateMany({rating: 9},{$set: {rating:10}})
+-->to delete
+db.movies.deleteOne({name: "vikram vedha"})
+db.movies.deleteMany({rating: 10});
+--> to create table
+const result = db.movies.find().toArray()
+console.table(result)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+--------------------------------------------------------------------------------------------------------------------------------------------------------->

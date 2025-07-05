@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* @theme {
+    --font-Roboto: "Roboto", "sans-serif";
+    --text-tiny: 0.625rem;
+    --color-ahamed: #F57c00;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+.my-btn {
+    @apply bg-red-600 text-white p-2 border-2 hover:outline-ahamed
+} */
+
