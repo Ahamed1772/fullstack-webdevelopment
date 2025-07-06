@@ -4,14 +4,18 @@ import { getAuth } from 'firebase/auth';
 import { GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+
+import env from "dotenv";
+env.config();
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCKB1Y6_Lr2El9xaJ_UD6IYvsQfbSxs48M",
-  authDomain: "fir-course-43b58.firebaseapp.com",
-  projectId: "fir-course-43b58",
-  storageBucket: "fir-course-43b58.firebasestorage.app",
-  messagingSenderId: "187504622670",
-  appId: "1:187504622670:web:592485702f39b755b6571f",
-  measurementId: "G-H2MZQTR6VE"
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBuckek: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.MESSAGESENDERID,
+  appId: process.env.APPID,
+  measurementId: process.env.MEASUREMENTID,
 };
 
 // Initialize Firebase
